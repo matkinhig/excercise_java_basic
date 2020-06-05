@@ -12,28 +12,40 @@
         <main class="header-expand">
             <jsp:include page="_header.jsp"/>
             <div class="content-wrap">
-                <h1><strong> 6, 10 , 14, 18, 22</strong></h1>
-                <br>
-                <button type="button" class="btn btn-success" onclick="genRandomNumber();">Create</button>
+                <button type="button" class="btn btn-success" onclick="genList();">Create a List</button>
                 <br>
                 <br>
                 <br>
-                <h1>Random number :   <span id="result"> </span></h1>
+                <h1>List :   <span id="result"> </span></h1>
+                <br>
+                <br>
+                <br>
+                <button type="button" class="btn btn-success" onclick="genListRevert();">Revert</button>
+                <br>
+                <br>
+                <br>
+                <h1>List revert :   <span id="resultRV"> </span></h1>
             </div><!-- Contant Wrap -->
         </main><!-- Main Wrapper -->
         <script type="text/javascript">
-            function genRandomNumber() {
+            var listRevert = "";
+            function genList(){
                 $.ajax({
-                    url: "question4a",
+                    url: "question5b",
                     type: 'POST',
                     success: function (data) {
-                        console.log(data);
-                        $("#result").html(data);
+                        var list = data.split("#");
+                        $("#result").html(list[0]);
+                        listRevert = list[1];
                     },
                     error: function () {
-                        $("#result").html('22');
+
                     }
-                });
+                })
+            }
+            
+            function genListRevert() {
+               $("#resultRV").html(listRevert); 
             }
         </script>
     </body>

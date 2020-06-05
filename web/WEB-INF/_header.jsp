@@ -63,8 +63,9 @@
             </li>
             <li class="menu-item-has-children"><a href="#" title=""><i class="icon ion-ios-briefcase"></i><span>Question 6</span></a>
                 <ul class="children">
-                    <li><a href="pricing.html" title="">Question 4</a></li>
-                    <li><a href="grids.html" title="">Grids</a></li>
+                    <li><a href="question6a" title="">Question 6a</a></li>
+                    <li><a href="question6b" title="">Question 6b</a></li>
+                    <li><a href="question6b" title="">Question 6c</a></li>
                 </ul>
             </li>
 
