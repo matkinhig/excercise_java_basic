@@ -20,13 +20,13 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author Luc Nguyen by Matkinhig <lucnguyen.hcmut@gmail.com>
  */
-@WebServlet(name = "Question6bServlet", urlPatterns = {"/question6b"})
-public class Question6bServlet extends HttpServlet {
+@WebServlet(name = "Question6cServlet", urlPatterns = {"/question6c"})
+public class Question6cServlet extends HttpServlet {
 
-    @Override
+     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        RequestDispatcher dispatcher = this.getServletContext().getRequestDispatcher("/WEB-INF/question6b.jsp");
+        RequestDispatcher dispatcher = this.getServletContext().getRequestDispatcher("/WEB-INF/question6c.jsp");
         dispatcher.forward(request, response);
     }
 

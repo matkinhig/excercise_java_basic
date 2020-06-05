@@ -65,7 +65,7 @@
                 <ul class="children">
                     <li><a href="question6a" title="">Question 6a</a></li>
                     <li><a href="question6b" title="">Question 6b</a></li>
-                    <li><a href="question6b" title="">Question 6c</a></li>
+                    <li><a href="question6c" title="">Question 6c</a></li>
                 </ul>
             </li>
 
